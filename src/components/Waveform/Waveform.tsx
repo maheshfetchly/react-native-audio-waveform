@@ -509,7 +509,8 @@ export const Waveform = forwardRef<IWaveformRef, IWaveform>((props, ref) => {
           horizontal
           ref={scrollRef}
           style={styles.scrollContainer}
-          scrollEnabled={mode === 'live'}>
+          scrollEnabled={mode === 'live'}
+          showsHorizontalScrollIndicator={false}>
           {waveform.map((amplitude, indexCandle) => (
             <WaveformCandle
               key={indexCandle}
